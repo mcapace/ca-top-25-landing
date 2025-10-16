@@ -78,12 +78,12 @@ export default function Top25Landing() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="backdrop-blur-sm bg-charcoal-900/20 rounded-lg p-2 border border-platinum-700/20"
+              className="backdrop-blur-sm bg-white/10 rounded-lg p-3 border border-white/20"
             >
               <img 
                 src={caLogo} 
                 alt="Cigar Aficionado Logo" 
-                className="h-8 w-auto filter brightness-110"
+                className="h-8 w-auto filter brightness-0 invert"
               />
             </motion.div>
           </div>
@@ -103,7 +103,7 @@ export default function Top25Landing() {
                 </motion.div>
                 
                 <motion.h1 
-                  className="text-6xl lg:text-7xl font-bold mb-12 leading-relaxed font-playfair"
+                  className="text-5xl lg:text-6xl font-bold mb-8 leading-tight font-playfair"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
@@ -112,14 +112,14 @@ export default function Top25Landing() {
                   <span className="bg-gradient-to-r from-champagne-400 via-platinum-300 to-champagne-500 bg-clip-text text-transparent animate-gradient-x">
                     Top 25 Cigars of the Year
                   </span><br />
-                  <span className="flex items-center gap-6 text-4xl lg:text-5xl mt-4">
-                    <Gem className="w-12 h-12 text-champagne-400 animate-float" />
+                  <span className="flex items-center gap-4 text-3xl lg:text-4xl mt-6 font-playfair">
+                    <Gem className="w-10 h-10 text-champagne-400 animate-float" />
                     The Industry's Most Coveted List
                   </span>
                 </motion.h1>
                 
                 <motion.p 
-                  className="text-xl lg:text-2xl text-platinum-200 mb-12 leading-relaxed max-w-4xl font-crimson"
+                  className="text-lg lg:text-xl text-platinum-200 mb-10 leading-relaxed max-w-3xl font-crimson"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -171,27 +171,27 @@ export default function Top25Landing() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <AnimatedSection direction="up" delay={0.1}>
-              <GlassCard className="p-10 text-center h-32 flex flex-col justify-center">
-                <div className="text-4xl font-bold text-champagne-500 mb-2 font-playfair">$25,000</div>
-                <div className="text-platinum-300 font-medium">Net Investment</div>
+              <GlassCard className="p-8 text-center h-28 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-1 font-playfair">$25,000</div>
+                <div className="text-sm text-platinum-300 font-medium">Net Investment</div>
               </GlassCard>
             </AnimatedSection>
             <AnimatedSection direction="up" delay={0.2}>
-              <GlassCard className="p-10 text-center h-32 flex flex-col justify-center">
-                <div className="text-4xl font-bold text-champagne-500 mb-2 font-playfair">850K+</div>
-                <div className="text-platinum-300 font-medium">Total Reach</div>
+              <GlassCard className="p-8 text-center h-28 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-1 font-playfair">850K+</div>
+                <div className="text-sm text-platinum-300 font-medium">Total Reach</div>
               </GlassCard>
             </AnimatedSection>
             <AnimatedSection direction="up" delay={0.3}>
-              <GlassCard className="p-10 text-center h-32 flex flex-col justify-center">
-                <div className="text-4xl font-bold text-champagne-500 mb-2 font-playfair">33%</div>
-                <div className="text-platinum-300 font-medium">Share of Voice</div>
+              <GlassCard className="p-8 text-center h-28 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-1 font-playfair">33%</div>
+                <div className="text-sm text-platinum-300 font-medium">Share of Voice</div>
               </GlassCard>
             </AnimatedSection>
             <AnimatedSection direction="up" delay={0.4}>
-              <GlassCard className="p-10 text-center h-32 flex flex-col justify-center">
-                <div className="text-4xl font-bold text-champagne-500 mb-2 font-playfair">3</div>
-                <div className="text-platinum-300 font-medium">Sponsors Maximum</div>
+              <GlassCard className="p-8 text-center h-28 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-1 font-playfair">3</div>
+                <div className="text-sm text-platinum-300 font-medium">Sponsors Maximum</div>
               </GlassCard>
             </AnimatedSection>
           </div>
@@ -202,9 +202,9 @@ export default function Top25Landing() {
       <section className="py-24 bg-charcoal-800">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection direction="up">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-playfair text-ivory-50">Why Partner With the Top 25 Cigars of the Year?</h2>
-              <p className="text-xl lg:text-2xl text-platinum-200 max-w-4xl mx-auto font-crimson leading-relaxed">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-playfair text-ivory-50">Why Partner With the Top 25 Cigars of the Year?</h2>
+              <p className="text-lg lg:text-xl text-platinum-200 max-w-3xl mx-auto font-crimson leading-relaxed">
                 Align your brand with the industry's most prestigious and anticipated annual ranking. 
                 When Cigar Aficionado names the Top 25 Cigars of the Year, the entire cigar world pays attention.
               </p>
@@ -213,62 +213,62 @@ export default function Top25Landing() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatedSection direction="up" delay={0.1}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Shield className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Shield className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Category Exclusivity</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">Be the only brand in your category associated with the industry's most prestigious ranking. No competition, maximum impact.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Category Exclusivity</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">Be the only brand in your category associated with the industry's most prestigious ranking. No competition, maximum impact.</p>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.2}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Gem className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Gem className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Peak Cigar Season</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">The Top 25 announcement is the most anticipated moment in cigar culture. Your brand shares center stage.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Peak Cigar Season</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">The Top 25 announcement is the most anticipated moment in cigar culture. Your brand shares center stage.</p>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.3}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Crown className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Crown className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Elite Cigar Connoisseurs</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">Reach affluent collectors, connoisseurs, and industry leaders who drive premium cigar sales.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Elite Cigar Connoisseurs</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">Reach affluent collectors, connoisseurs, and industry leaders who drive premium cigar sales.</p>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.4}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Globe className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Globe className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Multi-Channel Dominance</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">Comprehensive visibility across digital, email, and premium placements during peak engagement.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Multi-Channel Dominance</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">Comprehensive visibility across digital, email, and premium placements during peak engagement.</p>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.5}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Award className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Award className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Editorial Authority</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">Leverage Cigar Aficionado's unmatched credibility and influence in the premium cigar market.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Editorial Authority</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">Leverage Cigar Aficionado's unmatched credibility and influence in the premium cigar market.</p>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.6}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-all duration-300 h-80 flex flex-col">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
-                  <Star className="w-8 h-8 text-champagne-400" />
+              <GlassCard className="p-8 text-center hover:scale-105 transition-all duration-300 h-72 flex flex-col">
+                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-champagne-500/20 to-platinum-400/20 rounded-full flex items-center justify-center border border-champagne-500/30">
+                  <Star className="w-7 h-7 text-champagne-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 font-playfair text-ivory-50">Proven Performance</h3>
-                <p className="text-platinum-200 font-crimson leading-relaxed flex-grow">500K+ display impressions, 150K+ email reach, and premium placement guarantees.</p>
+                <h3 className="text-lg font-semibold mb-3 font-playfair text-ivory-50">Proven Performance</h3>
+                <p className="text-sm text-platinum-200 font-crimson leading-relaxed flex-grow">500K+ display impressions, 150K+ email reach, and premium placement guarantees.</p>
               </GlassCard>
             </AnimatedSection>
           </div>
@@ -438,31 +438,31 @@ export default function Top25Landing() {
       <section className="py-20 bg-charcoal-800">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection direction="up">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 font-playfair text-ivory-50">Reach Premium Cigar Connoisseurs</h2>
-              <p className="text-xl text-platinum-300 font-crimson">Connect with the world's most affluent and passionate cigar connoisseurs</p>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-playfair text-ivory-50">Reach Premium Cigar Connoisseurs</h2>
+              <p className="text-lg text-platinum-300 font-crimson">Connect with the world's most affluent and passionate cigar connoisseurs</p>
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <AnimatedSection direction="up" delay={0.1}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-transform duration-300 h-48 flex flex-col justify-center">
-                <div className="text-5xl font-bold text-champagne-500 mb-2 font-playfair">High HHI</div>
-                <div className="text-platinum-300 font-medium">Affluent demographic with significant purchasing power</div>
+              <GlassCard className="p-8 text-center hover:scale-105 transition-transform duration-300 h-36 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-2 font-playfair">High HHI</div>
+                <div className="text-sm text-platinum-300 font-medium">Affluent demographic with significant purchasing power</div>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.2}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-transform duration-300 h-48 flex flex-col justify-center">
-                <div className="text-5xl font-bold text-champagne-500 mb-2 font-playfair">Engaged</div>
-                <div className="text-platinum-300 font-medium">Passionate collectors and connoisseurs</div>
+              <GlassCard className="p-8 text-center hover:scale-105 transition-transform duration-300 h-36 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-2 font-playfair">Engaged</div>
+                <div className="text-sm text-platinum-300 font-medium">Passionate collectors and connoisseurs</div>
               </GlassCard>
             </AnimatedSection>
             
             <AnimatedSection direction="up" delay={0.3}>
-              <GlassCard className="p-10 text-center hover:scale-105 transition-transform duration-300 h-48 flex flex-col justify-center">
-                <div className="text-5xl font-bold text-champagne-500 mb-2 font-playfair">Loyal</div>
-                <div className="text-platinum-300 font-medium">Trust in CA's editorial authority</div>
+              <GlassCard className="p-8 text-center hover:scale-105 transition-transform duration-300 h-36 flex flex-col justify-center">
+                <div className="text-3xl font-bold text-champagne-500 mb-2 font-playfair">Loyal</div>
+                <div className="text-sm text-platinum-300 font-medium">Trust in CA's editorial authority</div>
               </GlassCard>
             </AnimatedSection>
           </div>
@@ -517,11 +517,11 @@ export default function Top25Landing() {
           <AnimatedSection direction="up">
             <div className="text-center">
               <div className="flex justify-center mb-8">
-                <div className="backdrop-blur-sm bg-charcoal-900/30 rounded-xl p-3 border border-platinum-700/20">
+                <div className="backdrop-blur-sm bg-white/10 rounded-xl p-3 border border-white/20">
                   <img 
                     src={caLogo} 
                     alt="Cigar Aficionado Logo" 
-                    className="h-8 w-auto filter brightness-110"
+                    className="h-8 w-auto filter brightness-0 invert"
                   />
                 </div>
               </div>
