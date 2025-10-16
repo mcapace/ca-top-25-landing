@@ -34,19 +34,19 @@ export default function Top25Landing() {
   return (
     <>
       <Helmet>
-        <title>CA Top 25 Sponsorship - Cigar Aficionado</title>
-        <meta name="description" content="Exclusive category partnership opportunity with Cigar Aficionado's Top 25. Limited to 3 sponsors with 850,000+ total reach." />
-        <meta property="og:title" content="CA Top 25 Sponsorship - Cigar Aficionado" />
-        <meta property="og:description" content="Exclusive category partnership opportunity with Cigar Aficionado's Top 25. Limited to 3 sponsors with 850,000+ total reach." />
+        <title>Top 25 Cigars of the Year Sponsorship - Cigar Aficionado</title>
+        <meta name="description" content="Partner with Cigar Aficionado's most anticipated annual feature - Top 25 Cigars of the Year. Exclusive sponsorship opportunities reaching 850,000+ premium cigar enthusiasts worldwide." />
+        <meta property="og:title" content="Top 25 Cigars of the Year Sponsorship - Cigar Aficionado" />
+        <meta property="og:description" content="Partner with Cigar Aficionado's most anticipated annual feature - Top 25 Cigars of the Year. Exclusive sponsorship opportunities reaching 850,000+ premium cigar enthusiasts worldwide." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="CA Top 25 Sponsorship - Cigar Aficionado" />
-        <meta name="twitter:description" content="Exclusive category partnership opportunity with Cigar Aficionado's Top 25. Limited to 3 sponsors with 850,000+ total reach." />
+        <meta name="twitter:title" content="Top 25 Cigars of the Year Sponsorship - Cigar Aficionado" />
+        <meta name="twitter:description" content="Partner with Cigar Aficionado's most anticipated annual feature - Top 25 Cigars of the Year. Exclusive sponsorship opportunities reaching 850,000+ premium cigar enthusiasts worldwide." />
       </Helmet>
       
-      <div className="min-h-screen bg-zinc-900 text-white overflow-x-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-smoke-950 via-smoke-900 to-leather-950 text-white overflow-x-hidden font-inter">
         {/* Hero Section */}
-        <header className="relative min-h-screen flex items-center bg-gradient-to-br from-amber-900 via-zinc-900 to-zinc-950 overflow-hidden">
+        <header className="relative min-h-screen flex items-center bg-gradient-to-br from-cigar-900 via-smoke-900 to-leather-950 overflow-hidden">
           <FloatingElements />
           
           {/* Background cigar image */}
@@ -59,18 +59,18 @@ export default function Top25Landing() {
           </div>
           
           {/* Animated background gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-transparent to-amber-500/10 animate-gradient-xy"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-cigar-500/15 via-gold-500/10 via-transparent to-cigar-500/15 animate-gradient-xy"></div>
           
           {/* Mouse follower effect */}
           <div 
-            className="absolute w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none transition-all duration-300 ease-out"
+            className="absolute w-96 h-96 bg-cigar-500/8 rounded-full blur-3xl pointer-events-none transition-all duration-500 ease-out"
             style={{
               left: mousePosition.x - 192,
               top: mousePosition.y - 192,
             }}
           />
           
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
           
           {/* Logo */}
           <div className="absolute top-8 left-8 z-20">
@@ -91,40 +91,42 @@ export default function Top25Landing() {
             <AnimatedSection direction="up" delay={0.2}>
               <div className="max-w-4xl">
                 <motion.div 
-                  className="inline-block bg-gradient-to-r from-amber-600/20 to-amber-500/20 border border-amber-600/30 rounded-full px-6 py-3 mb-8 backdrop-blur-sm"
+                  className="inline-block bg-gradient-to-r from-cigar-600/20 to-gold-500/20 border border-cigar-600/30 rounded-full px-6 py-3 mb-8 backdrop-blur-sm"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <span className="text-amber-400 text-sm font-semibold flex items-center gap-2">
+                  <span className="text-cigar-400 text-sm font-semibold flex items-center gap-2">
                     <Sparkles className="w-4 h-4" />
-                    LIMITED AVAILABILITY • 3 SPONSORS ONLY
+                    THE MOST ANTICIPATED CIGAR EVENT OF THE YEAR • 3 EXCLUSIVE SPONSORS
                   </span>
                 </motion.div>
                 
                 <motion.h1 
-                  className="text-6xl lg:text-7xl font-bold mb-8 leading-tight"
+                  className="text-6xl lg:text-7xl font-bold mb-8 leading-tight font-playfair"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  Elevate Your Brand with<br />
-                  <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent animate-gradient-x">
-                    Cigar Aficionado's
+                  Partner with the<br />
+                  <span className="bg-gradient-to-r from-cigar-400 via-gold-500 to-cigar-600 bg-clip-text text-transparent animate-gradient-x">
+                    Top 25 Cigars of the Year
                   </span><br />
-                  <span className="flex items-center gap-4">
-                    Top 25 Sponsorship
-                    <Crown className="w-12 h-12 text-amber-500 animate-float" />
+                  <span className="flex items-center gap-4 text-4xl lg:text-5xl">
+                    <Crown className="w-12 h-12 text-cigar-500 animate-float" />
+                    The Industry's Most Coveted List
                   </span>
                 </motion.h1>
                 
                 <motion.p 
-                  className="text-xl lg:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-3xl"
+                  className="text-xl lg:text-2xl text-zinc-300 mb-10 leading-relaxed max-w-4xl font-crimson"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  Exclusive category partnership opportunity. Be part of the most anticipated event in the cigar industry with{' '}
-                  <span className="text-amber-400 font-semibold">850,000+ total reach</span>.
+                  Join the most prestigious cigar publication in the world for the industry's most anticipated annual feature. 
+                  Reach{' '}
+                  <span className="text-cigar-400 font-semibold">850,000+ premium cigar enthusiasts</span> who eagerly await 
+                  Cigar Aficionado's definitive ranking of the finest cigars crafted each year.
                 </motion.p>
                 
                 <motion.div 
@@ -135,25 +137,25 @@ export default function Top25Landing() {
                 >
                   <motion.button 
                     onClick={handleContact}
-                    className="group relative bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300 text-center cursor-pointer overflow-hidden"
+                    className="group relative bg-gradient-to-r from-cigar-600 to-cigar-700 hover:from-cigar-500 hover:to-cigar-600 text-white px-12 py-6 rounded-xl font-semibold text-lg transition-all duration-300 text-center cursor-pointer overflow-hidden shadow-glow"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-gold-400 to-cigar-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     <span className="relative flex items-center justify-center gap-2">
                       <Zap className="w-5 h-5" />
-                      Secure Your Sponsorship
+                      Secure Your Top 25 Partnership
                     </span>
                   </motion.button>
                   
                   <motion.a 
                     href="#package" 
-                    className="group bg-zinc-800/50 hover:bg-zinc-700/50 backdrop-blur-sm border border-zinc-700/50 hover:border-amber-500/50 text-white px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300 inline-block text-center"
+                    className="group bg-leather-800/50 hover:bg-leather-700/50 backdrop-blur-sm border border-leather-700/50 hover:border-cigar-500/50 text-white px-12 py-6 rounded-xl font-semibold text-lg transition-all duration-300 inline-block text-center"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <span className="flex items-center justify-center gap-2">
-                      View Package Details
+                      Explore Partnership Package
                       <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </motion.a>
@@ -191,46 +193,49 @@ export default function Top25Landing() {
       <section className="py-20 bg-zinc-900">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Partner With CA Top 25?</h2>
-            <p className="text-xl text-zinc-400">Position your brand at the pinnacle of cigar culture</p>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-playfair">Why Partner With the Top 25 Cigars of the Year?</h2>
+            <p className="text-xl lg:text-2xl text-zinc-400 max-w-4xl mx-auto font-crimson">
+              Align your brand with the industry's most prestigious and anticipated annual ranking. 
+              When Cigar Aficionado names the Top 25 Cigars of the Year, the entire cigar world pays attention.
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <Target className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Category Exclusivity</h3>
-              <p className="text-zinc-400">No direct competition. Your category is protected with guaranteed exclusivity.</p>
-            </div>
+            <GlassCard className="p-8">
+              <Target className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Category Exclusivity</h3>
+              <p className="text-zinc-400 font-crimson">Be the only brand in your category associated with the industry's most prestigious ranking. No competition, maximum impact.</p>
+            </GlassCard>
             
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <TrendingUp className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Peak Engagement</h3>
-              <p className="text-zinc-400">Capture attention during the year's most anticipated cigar content release.</p>
-            </div>
+            <GlassCard className="p-8">
+              <TrendingUp className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Peak Cigar Season</h3>
+              <p className="text-zinc-400 font-crimson">The Top 25 announcement is the most anticipated moment in cigar culture. Your brand shares center stage.</p>
+            </GlassCard>
             
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <Users className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Premium Audience</h3>
-              <p className="text-zinc-400">Reach affluent, passionate cigar enthusiasts and collectors.</p>
-            </div>
+            <GlassCard className="p-8">
+              <Users className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Elite Cigar Enthusiasts</h3>
+              <p className="text-zinc-400 font-crimson">Reach affluent collectors, connoisseurs, and industry leaders who drive premium cigar sales.</p>
+            </GlassCard>
             
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <Award className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Multi-Channel Exposure</h3>
-              <p className="text-zinc-400">Comprehensive visibility across digital, email, and premium placements.</p>
-            </div>
+            <GlassCard className="p-8">
+              <Award className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Multi-Channel Dominance</h3>
+              <p className="text-zinc-400 font-crimson">Comprehensive visibility across digital, email, and premium placements during peak engagement.</p>
+            </GlassCard>
             
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <Check className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Editorial Excellence</h3>
-              <p className="text-zinc-400">Align with Cigar Aficionado's trusted brand and authority.</p>
-            </div>
+            <GlassCard className="p-8">
+              <Check className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Editorial Authority</h3>
+              <p className="text-zinc-400 font-crimson">Leverage Cigar Aficionado's unmatched credibility and influence in the premium cigar market.</p>
+            </GlassCard>
             
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700">
-              <TrendingUp className="w-12 h-12 text-amber-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Measurable Results</h3>
-              <p className="text-zinc-400">500K display impressions plus targeted email reach.</p>
-            </div>
+            <GlassCard className="p-8">
+              <TrendingUp className="w-12 h-12 text-cigar-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 font-playfair">Proven Performance</h3>
+              <p className="text-zinc-400 font-crimson">500K+ display impressions, 150K+ email reach, and premium placement guarantees.</p>
+            </GlassCard>
           </div>
         </div>
       </section>
@@ -239,8 +244,11 @@ export default function Top25Landing() {
       <section id="package" className="py-20 bg-zinc-950">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Your Comprehensive Package</h2>
-            <p className="text-xl text-zinc-400">Everything you need to make maximum impact</p>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-playfair">Your Top 25 Partnership Package</h2>
+            <p className="text-xl lg:text-2xl text-zinc-400 max-w-3xl mx-auto font-crimson">
+              A comprehensive sponsorship package designed to maximize your brand's visibility during 
+              the most anticipated moment in cigar culture.
+            </p>
           </div>
 
           <div className="space-y-6">
@@ -489,6 +497,7 @@ export default function Top25Landing() {
           </AnimatedSection>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
