@@ -11,9 +11,9 @@ const GlassCard = ({
   return (
     <motion.div
       className={`
-        relative backdrop-blur-md bg-charcoal-900/20 border border-platinum-600/20 rounded-2xl
+        relative backdrop-blur-md bg-charcoal-800/30 border border-platinum-500/30 rounded-2xl
         ${glow ? 'shadow-elegant-xl shadow-champagne-500/15' : 'shadow-elegant'}
-        ${hover ? 'hover:bg-charcoal-900/30 hover:border-champagne-500/30' : ''}
+        ${hover ? 'hover:bg-charcoal-800/40 hover:border-champagne-500/40' : ''}
         transition-all duration-300 ease-out
         ${className}
       `}
